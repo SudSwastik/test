@@ -3,7 +3,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t SudSwastik/react-app -f Dockerfile.dev .
+  - docker build -t sudswastik/react-app -f Dockerfile.dev .
 
 script:
-  - docker run SudSwastik/react-app npm run test -- --coverage
+  - docker run sudswastik/react-app npm run test -- --coverage
