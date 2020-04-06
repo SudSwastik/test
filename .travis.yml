@@ -6,4 +6,4 @@ before_install:
   - docker build -t sudswastik/react-app -f Dockerfile.dev .
 
 script:
-  - docker run sudswastik/react-app npm run test -- --coverage
+  - docker run sudswastik/react-app
